@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009966" >
+
+    <com.dream.ui.view.RoundedImageView
+        android:id="@+id/heade_login_view"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/header_example"
+        app:riv_border_color="#fff"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="100dip"
+        app:riv_oval="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user"
+        android:layout_alignRight="@+id/heade_login_view"
+        android:layout_below="@id/heade_login_view"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="10dp"
+        android:text="UserName"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+          android:layout_below="@+id/tv_user">
+
+        <ListView
+            android:id="@+id/menu_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

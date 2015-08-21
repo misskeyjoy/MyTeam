@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009966"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/regist_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/regist_phone_hint"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#222222" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp" >
+
+        <Button
+            android:id="@+id/reigit_send"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/regist_next_bt_send" />
+
+        <EditText
+            android:id="@+id/regist_et_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/reigit_send"
+            android:layout_alignBottom="@+id/reigit_send"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="@string/regist_phone_code"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="#222222" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reigit_next_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/btn_login"
+        android:clickable="false"
+        android:text="@string/regist_next_btn_string" />
+
+</LinearLayout>
